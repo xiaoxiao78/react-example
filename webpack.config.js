@@ -83,9 +83,10 @@ module.exports = {
             loader: 'css-loader',
 
             // 开启了CSS Module功能，避免类名冲突问题
+            //这里的配置是类名加hash值 避免冲突可以选择文件名+类名 ："[name]-[local]"
             options: {
               modules: true,
-              localIdentName: '[name]-[local]',
+              localIdentName: '[path][name]__[local]--[hash:base64:5]', 
             },
           },
 

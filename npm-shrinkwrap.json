@@ -1,3 +1,4 @@
+//锁定package.json中安装的依赖版本，下次安装的执行npm install 默认安装这里指定的默认版本
 {
   "name": "react-name",
   "version": "1.0.0",
